@@ -1,0 +1,19 @@
+{
+    "name": "@sample-container/server",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "sst bind 'bun --watch ./src/interval.ts'",
+      "typecheck": "tsc -noEmit"
+    },
+    "devDependencies": {
+      "@types/node": "^22.5.4",
+      "sst": "2.43.4",
+      "@types/express": "4.17.21"
+    },
+    "dependencies": {
+      "zod": "^3.23.8",
+      "express": "4.21.0",
+      "@sample-container/core": "workspace:"
+    }
+  }
